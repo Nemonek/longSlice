@@ -44,7 +44,7 @@ public static class LargestSeriesProduct
         int prodotto(string str) {
             int tmp = 1;
             foreach (char item in str)
-                tmp*=(int)item-48; //Il casting da char a int porta la codifica ascii del char in intero: lo 0 in ascii è 48, quindi si sottrarìe sìzero al numero sottoposto al casting
+                tmp*=(int)item-48; //Il casting da char a int porta la codifica ascii del char in intero: lo 0 in ascii è 48, quindi si sottrae zero al numero sottoposto al casting
 
             return tmp;
         }
