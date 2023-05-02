@@ -16,6 +16,7 @@ public static class LargestSeriesProduct
         //Controllo che la lunghezza sia uguale a 0 e lo span anche; ritorno 1 nel caso
         if( span == 0 && digits.Length == 0 )
             return 1;
+
         //Controllo che digits non sia vuoto, che span sia maggiore di zero e che non sia maggiore della lunghezza di digits
         if ( digits.Length == 0 || digits.Length < span || span < 0 )
             throw new ArgumentException();
@@ -24,7 +25,6 @@ public static class LargestSeriesProduct
         foreach (char item in digits)
             if ( !(item >= 48 && item <=57) )
                 throw new ArgumentException();
-
 
 
         //DEFINIZIONE DEL PRODOTTO MAGGIORE
