@@ -10,6 +10,10 @@ Questo codice si compone di 3 elementi fondamentali:
  * una parte adibita al controllo e ricerca del prodotto maggiore;
  * una parte adibita alla dichiarazione di funzioni.
 
+### Esempio
+Data alla funzione la stringa "1027839564"; il prodotto maggiore per uno span di 3 cifre è 270 (9 x 5 x 6) mentre per uno span di 5 è 7560 (7 x 8 x 3 x 9 x 5).
+
+
 ### Controlli dell'input
 ```C#
 //Controllo che la lunghezza sia uguale a 0 e lo span anche; ritorno 1 nel caso
