@@ -6,8 +6,13 @@ public static class LargestSeriesProduct
 {
     public static long GetLargestProduct(string digits, int span) 
     {
+        //VARIABILI
         int max = 0;
         int k = 0;
+        
+
+        //CONTROLLI
+        
         //Controllo che la lunghezza sia uguale a 0 e lo span anche; ritorno 1 nel caso
         if( span == 0 && digits.Length == 0 )
             return 1;
@@ -20,6 +25,10 @@ public static class LargestSeriesProduct
             if ( !(item >= 48 && item <=57) )
                 throw new ArgumentException();
 
+
+
+        //DEFINIZIONE DEL PRODOTTO MAGGIORE
+
         //Definisco qual'è il prodotto maggiore e lo ritorno
         for (int i = 0; i < digits.Length-span+1; i++)
         {
@@ -27,6 +36,9 @@ public static class LargestSeriesProduct
             max = (max < k) ? k : max;
         }
         return max;
+
+
+        //FUNZION*
 
         //Faccio il prodotto dei numeri selezionati secondo lo span
         int prodotto(string str) {
